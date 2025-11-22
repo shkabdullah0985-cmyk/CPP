@@ -40,12 +40,16 @@ int main(){
             cout<<"INVALID INPUT! PLEASE TYPE YES OR NO"<<endl;
             attempts++;
         }
-    }
+    };
+    if(!valid){
+        cout<<"YOU HAVE EXCEEDED THE 5 ATTEMPTS. TRY AGAIN LATER!"<<endl;
+    };
         
     switch(order){
         case 1:
         if( cancelorder=="YES" || cancelorder=="Y"){
                 cout<<"YOUR ORDER IS CANCEL"<<endl;
+                cout<<"PENALTY AMOUNT IS 100 RS"<<endl;
         }
         else if (cancelorder=="NO"|| cancelorder=="N"||cancelorder=="n"||cancelorder=="no"){
             cout<<"ORDER PLACE SUCESSFULLY :-) "<<endl;
@@ -54,7 +58,7 @@ int main(){
             cout<<"THANKYOU FOR VISITING ! "<<endl;  
         }
         else {
-            cout<<"YOU HAVE EXCEEDED THE 5 ATTEMPTS. TRY AGAIN LATER!"<<endl;
+            cout<<"VISIT AGAIN :-("<<endl;
         }
         
         break;
@@ -62,6 +66,7 @@ int main(){
         case 2:
         if( cancelorder=="YES" || cancelorder=="Y"){
                 cout<<"YOUR ORDER IS CANCEL"<<endl;
+                cout<<"PENALTY AMOUNT IS 100 RS"<<endl;
         }
         else if (cancelorder=="NO"|| cancelorder=="N"||cancelorder=="n"||cancelorder=="no"){
             cout<<"ORDER PLACE SUCESSFULLY :-) "<<endl;
@@ -70,13 +75,14 @@ int main(){
             cout<<"THANKYOU FOR VISITING ! "<<endl;  
         }
         else {
-            cout<<"YOU HAVE EXCEEDED THE 5 ATTEMPTS. TRY AGAIN LATER!"<<endl;
+            cout<<"VISIT AGAIN :-("<<endl;
         }
         break;
         
         case 3:
         if( cancelorder=="YES" || cancelorder=="Y"){
                 cout<<"YOUR ORDER IS CANCEL"<<endl;
+                cout<<"PENALTY AMOUNT IS 100 RS"<<endl;
         }
         else if (cancelorder=="NO"|| cancelorder=="N"||cancelorder=="n"||cancelorder=="no"){
             cout<<"ORDER PLACE SUCESSFULLY :-) "<<endl;
@@ -85,7 +91,7 @@ int main(){
             cout<<"THANKYOU FOR VISITING ! "<<endl;  
         }
         else {
-            cout<<"YOU HAVE EXCEEDED THE 5 ATTEMPTS. TRY AGAIN LATER!"<<endl;
+            cout<<"VISIT AGAIN :-("<<endl;
         }
         
         break;
@@ -93,6 +99,7 @@ int main(){
         case 4:
         if( cancelorder=="YES" || cancelorder=="Y"){
                 cout<<"YOUR ORDER IS CANCEL"<<endl;
+                cout<<"PENALTY AMOUNT IS 100 RS"<<endl;
         }
         else if (cancelorder=="NO"|| cancelorder=="N"||cancelorder=="n"||cancelorder=="no"){
             cout<<"ORDER PLACE SUCESSFULLY :-) "<<endl;
@@ -101,12 +108,20 @@ int main(){
             cout<<"THANKYOU FOR VISITING ! "<<endl;  
         }
         else {
-            cout<<"YOU HAVE EXCEEDED THE 5 ATTEMPTS. TRY AGAIN LATER!"<<endl;
+            cout<<"VISIT AGAIN :-("<<endl;
         }
         break;
         
         default:
         cout<<"INVALID ORDER ! "<<endl;
     }
+    string feedback;
+        cout<<" PLEASE ENTER YOUR FEEDBACK :-) "<<endl;
+        cin>>feedback;
+        cout<<"FEEDBACK NOTED :- "<<feedback<<endl;
+        cout<<"WE WILL WORK ON IT :-) "<<endl;
+        cout<<" THAKNYOU FOR YOUR RESPONSE :-)"<<endl;
+    
+    
     return 0;
 }
