@@ -16,15 +16,16 @@ int main(){
     for(int i = 1;i<5;i++){
     cout<<i<<"."<<menu[i-1]<<endl;
     }
-    
     int order ,quantity;
     string cancelorder;
     cout<<"ENTER YOUR ORDER(1,2,3,4):- "<<endl;
     cin>>order;
     
-    cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
-    cin>>quantity;
-    
+    if(order>4){
+        cout<<"INVALID ORDER !"<<endl;
+        
+     return 0;
+    }
     string complain1;
     string problem;
     int time;
@@ -56,6 +57,8 @@ int main(){
     };
     if(!valid){
         cout<<"YOU HAVE EXCEEDED THE 5 ATTEMPTS. TRY AGAIN LATER!"<<endl;
+        
+        return 0;
     }
         
     switch(order){
@@ -80,12 +83,13 @@ int main(){
     cout<<"ENTER YOUR ORDER(1,2,3,4):- "<<endl;
     cin>>order;
     
-    cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
-    cin>>quantity;
-    
     switch(order){
         
         case 1:
+        
+        cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+    
         cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[1]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[1] <<endl;
@@ -97,6 +101,10 @@ int main(){
         break;
         
         case 2:
+        
+        cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+        
         cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[2]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[2] <<endl;
@@ -108,6 +116,10 @@ int main(){
             break;
             
             case 3:
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[3]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[3] <<endl;
@@ -119,6 +131,10 @@ int main(){
             break;
             
             case 4:
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[4]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[4] <<endl;
@@ -131,11 +147,12 @@ int main(){
             
             default :
             cout<<"INVALID ORDER !"<<endl;
+            break;
     }
     
        }
        else if(option==2){
-           cout<<"IF YOU ARE CANCELING YOUR ORDER IT WILL CAN CHARGE YOU THE PENALTY AMOUNT"<<endl;
+           cout<<"PENALTY AMOUNT :-  100RS "<<endl;
        }
              else if(option==3){
                   cout<<"COMPLAIN"<<endl;
@@ -205,6 +222,10 @@ int main(){
              }
         }
         else {
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER PLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[4]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[4] <<endl;
@@ -217,6 +238,7 @@ int main(){
         break;
         
         case 2:
+        
         if( cancelorder=="YES" || cancelorder=="Y"||cancelorder=="yes"||cancelorder=="y"){
         cout<<"OPTIONS"<<endl;
         
@@ -233,12 +255,17 @@ int main(){
     for(int i = 1;i<5;i++){
     cout<<i<<"."<<menu[i-1]<<endl;
     }
-    cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
-    cin>>quantity;
+    
+    cout<<"ENTER YOUR ORDER(1,2,3,4):- "<<endl;
+    cin>>order;
     
     switch(order){
         
         case 1:
+        
+        cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+        
         cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[1]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[1] <<endl;
@@ -250,6 +277,10 @@ int main(){
         break;
         
         case 2:
+        
+        cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+        
         cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[2]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[2] <<endl;
@@ -261,6 +292,10 @@ int main(){
             break;
             
             case 3:
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[3]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[3] <<endl;
@@ -272,6 +307,10 @@ int main(){
             break;
             
             case 4:
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[4]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[4] <<endl;
@@ -284,10 +323,11 @@ int main(){
             
             default :
             cout<<"INVALID ORDER !"<<endl;
+            break;
     }
        }
        else if(option==2){
-           cout<<"IF YOU ARE CANCELING YOUR ORDER IT WILL CAN CHARGE YOU THE PENALTY AMOUNT"<<endl;
+           cout<<"PENALTY AMOUNT :- 100RS"<<endl;
        }
              else if(option==3){
                   cout<<"COMPLAIN"<<endl;
@@ -357,6 +397,10 @@ int main(){
              }
         }
         else {
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER PLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[2]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[2] <<endl;
@@ -369,6 +413,7 @@ int main(){
         break;
 
         case 3:
+        
         if( cancelorder=="YES" || cancelorder=="Y"||cancelorder=="yes"||cancelorder=="y"){
         cout<<"OPTIONS"<<endl;
         
@@ -385,12 +430,17 @@ int main(){
     for(int i = 1;i<5;i++){
     cout<<i<<"."<<menu[i-1]<<endl;
     }
-    cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
-    cin>>quantity;
+    
+    cout<<"ENTER YOUR ORDER(1,2,3,4):- "<<endl;
+    cin>>order;
     
     switch(order){
         
         case 1:
+        
+        cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+        
         cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[1]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[1] <<endl;
@@ -402,6 +452,10 @@ int main(){
         break;
         
         case 2:
+        
+        cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+        
         cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[2]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[2] <<endl;
@@ -413,6 +467,10 @@ int main(){
             break;
             
             case 3:
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[3]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[3] <<endl;
@@ -424,6 +482,10 @@ int main(){
             break;
             
             case 4:
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[4]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[4] <<endl;
@@ -436,10 +498,11 @@ int main(){
             
             default :
             cout<<"INVALID ORDER !"<<endl;
+            break;
     }
        }
        else if(option==2){
-           cout<<"IF YOU ARE CANCELING YOUR ORDER IT WILL CAN CHARGE YOU THE PENALTY AMOUNT"<<endl;
+           cout<<" PENALTY AMOUNT :- 100RS "<<endl;
        }
              else if(option==3){
                   cout<<"COMPLAIN"<<endl;
@@ -509,6 +572,10 @@ int main(){
              }
         }
         else {
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER PLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[3]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[3] <<endl;
@@ -521,6 +588,7 @@ int main(){
         break;
         
         case 4:
+        
         if( cancelorder=="YES" || cancelorder=="Y"||cancelorder=="yes"||cancelorder=="y"){
         cout<<"OPTIONS"<<endl;
         
@@ -537,12 +605,17 @@ int main(){
     for(int i = 1;i<5;i++){
     cout<<i<<"."<<menu[i-1]<<endl;
     }
-    cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
-    cin>>quantity;
+    
+    cout<<"ENTER YOUR ORDER(1,2,3,4):- "<<endl;
+    cin>>order;
     
     switch(order){
         
         case 1:
+        
+        cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+        
         cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[1]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[1] <<endl;
@@ -554,6 +627,10 @@ int main(){
         break;
         
         case 2:
+        
+        cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+        
         cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[2]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[2] <<endl;
@@ -565,6 +642,10 @@ int main(){
             break;
             
             case 3:
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[3]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[3] <<endl;
@@ -576,6 +657,10 @@ int main(){
             break;
             
             case 4:
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER  REPLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[4]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[4] <<endl;
@@ -588,10 +673,11 @@ int main(){
             
             default :
             cout<<"INVALID ORDER !"<<endl;
+            break;
     }
        }
        else if(option==2){
-           cout<<"IF YOU ARE CANCELING YOUR ORDER IT WILL CAN CHARGE YOU THE PENALTY AMOUNT"<<endl;
+           cout<< "PENALTY AMOUNT  :- 100RS "<<endl;
        }
              else if(option==3){
                   cout<<"COMPLAIN"<<endl;
@@ -661,6 +747,10 @@ int main(){
              }
         }
         else {
+            
+            cout<<"ENTER A QUANTITY OF YOUR ORDER:- "<<endl;
+    cin>>quantity;
+            
             cout<<"ORDER PLACE SUCESSFULLY :-) "<<endl;
             cout<<"PRICE :- "<<price[4]<<endl;
             cout<<"YOUR BILLING AMOUNT :- "<<quantity*price[4] <<endl;
@@ -671,9 +761,6 @@ int main(){
             cout<<"VISIT AGAIN :-)"<<endl;
         }
         break;
-        
-        default:
-        cout<<"INVALID ORDER ! "<<endl;
     }
     
     return 0;
